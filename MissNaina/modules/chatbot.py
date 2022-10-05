@@ -2,7 +2,7 @@ import json
 import re
 import html
 import requests
-import Himawari.modules.sql.kuki_sql as sql
+import MissNaina.modules.sql.kuki_sql as sql
 
 from time import sleep
 from telegram import (CallbackQuery, Chat, InlineKeyboardButton,
