@@ -1,7 +1,7 @@
 import threading
 
 from MissNaina.modules.helper_funcs.msg_types import Types
-from Himawari.modules.sql import BASE, SESSION
+from MissNaina.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func
 
 
