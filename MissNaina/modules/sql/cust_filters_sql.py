@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, Boolean, BigInteger, distinct, func
 
 from MissNaina.modules.helper_funcs.msg_types import Types
-from Himawari.modules.sql import BASE, SESSION
+from MissNaina.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
