@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue
     from telegram.utils.helpers import escape_markdown
 
-    from Himawari import EVENT_LOGS, LOGGER, dispatcher
-    from Himawari.modules.helper_funcs.chat_status import user_admin
-    from Himawari.modules.sql import log_channel_sql as sql
+    from MissNaina import EVENT_LOGS, LOGGER, dispatcher
+    from MissNaina.modules.helper_funcs.chat_status import user_admin
+    from MissNaina.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
