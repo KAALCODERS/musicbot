@@ -85,7 +85,7 @@ HELP_IMG = "https://telegra.ph/file/9dfcdab5244a61b323210.jpg"
 START_IMG = "https://telegra.ph/file/eb8617465e7a62650f862.jpg"
     
 PM_START_TEXT = """
-  ⫸ [Himawari](https://telegra.ph/file/7ba6536e75495cdc6ceb1.jpg) ⫷
+  ⫸ [MissNaina](https://telegra.ph/file/7ba6536e75495cdc6ceb1.jpg) ⫷
 Konnichiwa, I am {}
  
 I am an Anime themed group management bot with some fun extras ;)
@@ -106,7 +106,7 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="📓 Commands", callback_data="help_back"),
-                       InlineKeyboardButton(text="Source 🌐", url=f"https://github.com/ArshCypherZ/HWBot")
+                       InlineKeyboardButton(text="Source 🌐", url=f"https://github.com/Naina-XD/MissNaina-Robo")
                     ],
                     [                  
                        InlineKeyboardButton(
@@ -143,7 +143,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Himawari.modules." + module_name)
+    imported_module = importlib.import_module("MissNaina.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -259,7 +259,7 @@ def start(update: Update, context: CallbackContext):
                   InlineKeyboardButton(text="Updates 🌻", url=f"https://telegram.dog/{UPDATES_CHANNEL}")
                       ],
                     [
-                       InlineKeyboardButton(text="Alliance 🌐", url="https://telegram.dog/ViciousAlliance")
+                       InlineKeyboardButton(text="Alliance 🌐", url="https://telegram.dog/RiyuXD")
                   ]
                 ]
             ),
@@ -702,7 +702,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info(f"Himawari started, Using long polling. | SUPPORT: [@{SUPPORT_CHAT}]")
+        LOGGER.info(f"MissNaina started, Using long polling. | SUPPORT: [@{SUPPORT_CHAT}]")
         updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
 
 
