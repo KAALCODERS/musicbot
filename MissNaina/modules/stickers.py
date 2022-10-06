@@ -183,7 +183,7 @@ def kang(update, context):
             sticker_emoji = "🙂"
 
         adding_process = msg.reply_text(
-            "<b>Please wait...For a Moment</b>",
+            "<b>ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ʙᴀʙʏ...</b>",
             parse_mode=ParseMode.HTML,
         )
 
@@ -226,7 +226,7 @@ def kang(update, context):
                     ]
                 )
                 adding_process.edit_text(
-                    f"<b>Your sticker has been added!</b>"
+                    f"<b>ʏᴏᴜʀ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ᴀᴅᴅᴇᴅ!</b>"
                     f"\nEmoji Is : {sticker_emoji}",
                     reply_markup=edited_keyboard,
                     parse_mode=ParseMode.HTML,
@@ -779,8 +779,7 @@ async def drawText(image_path, text):
     if os.name == "nt":
         fnt = "ariel.ttf"
     else:
-        fnt = "./Himawari/resources/ArmWrestler.ttf"
-    m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
+        fnt = "./MissNaina/resources/Vampire_Wars.ttf"    m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
     if ";" in text:
         upper_text, lower_text = text.split(";")
     else:
