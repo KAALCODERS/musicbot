@@ -1,5 +1,5 @@
 {
-      "name": "HimawariRobot",
+      "name": "Kaalmusic",
       "description": "An Anime themed Telegram group management bot.",
       "logo": "https://telegra.ph/file/9dfcdab5244a61b323210.jpg", 
       "keywords": [
@@ -9,7 +9,7 @@
          "manager",
          "Himawari"
       ],   
-   "repository": "https://github.com/ArshCypherZ/HWBot",
+   "repository": "https://github.com/kaalcoders/musicbot",
    "addons": [
       {
          "options": {
@@ -34,36 +34,6 @@
          "required": true,
          "value": ""
       },
-      "APP_ID": {
-         "description": "Same as API_ID",
-         "required": true,
-         "value": ""
-      },
-      "APP_HASH": {
-         "description": "Same as API_HASH",
-         "required": true,
-         "value": ""
-      },  
-      "DATABASE_URL": {
-         "description": "Your Postgres SQL DataBase URI, Get one from ElephantSQL.com",
-         "required": true,
-         "value": ""
-      }, 
-      "DATABASE_URL2": {
-         "description": "Your one extra Mongo DataBase URI, Get one from mongodb.com",
-         "required": true,
-         "value": ""
-      }, 
-      "REDIS_URL": {
-         "description": "Your Redis URL, Get one from redislabs.com",
-         "required": true,
-         "value": ""
-      }, 
-     "REM_BG_API_KEY": {
-         "description": "From:- https://www.remove.bg/",
-         "required": false,
-         "value": ""
-      }, 
       "OWNER_ID": {
          "description": "Your Telegram User ID as an integer.",
          "required": true,
@@ -108,16 +78,6 @@
          "required": true,
          "value": "-123456789"
       },      
-      "TIME_API_KEY": {
-         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
-         "required": false,
-         "value": "abc"
-      },
-     "WALL_API": {
-         "description": "Required for wallpapers. From:- https://wall.alphacoders.com/api.php",
-         "required": false,
-         "value": ""
-      },
       "DEV_USERS": {
          "description": "Enter the IDs of the users who are the Developers of the Bot. If you are newbie and want help from us Itself, then keep the IDs as they are and add yours",
          "required": false,
@@ -161,21 +121,6 @@
          "required": false,
          "value": "https://example.herokuapp.com/"
       },
-      "GENIUS_API_TOKEN": {
-         "description": "Genius API Token get one from genius.com/api-client",
-         "required": false,
-         "value": ""
-      },
-      "DONATION_LINK": {
-         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
-         "required": false,
-         "value": "https://www.paypal.me/PaulSonOfLars"
-      },
-      "MONGO_DB_URL": {
-         "description": "Your Mongo DB URI",
-         "required": true,
-         "value": ""
-      },
       "HEROKU_API_KEY": {
          "description": "Your Heroku API Key from heroku profile",
          "required": true,
@@ -190,16 +135,6 @@
          "description": "Dont change",
          "required": true,
          "value": "True"
-      },
-      "ARQ_API_KEY": {
-         "description": "Get one @ARQRobot on Telegram",
-         "required": true,
-         "value": ""
-      },
-      "ARQ_API_URL": {
-         "description": "Leave it as it is",
-         "required": true,
-         "value": "arq.hamker.dev"
       },
       "ERROR_LOGS": {
          "description": "The ID of the Group where the bot will spam with shitty errors and techy stuff",
